@@ -1,10 +1,9 @@
 using System;
-using System.IO;
 using Xunit;
 
 namespace Ass0.Test
 {
-    public class UnitTest1
+    public class LeapYearTest
     {
         [Fact]
         public void LeapYear_IsLeapYear(){
@@ -18,14 +17,14 @@ namespace Ass0.Test
             var out1900 = LeapYear.IsLeapYear(1900);
             var out2000 = LeapYear.IsLeapYear(2000);
 
-            Assert.Equal(true,  out2004);
-            Assert.Equal(true,  out1996);
-            Assert.Equal(false, out1997);
+            Assert.True(out2004);
+            Assert.True(out1996);
+            Assert.False(out1997);
             
-            Assert.Equal(false, out1700);
-            Assert.Equal(false, out1800);
-            Assert.Equal(false, out1900);
-            Assert.Equal(true,  out2000);
+            Assert.False(out1700);
+            Assert.False(out1800);
+            Assert.False(out1900);
+            Assert.True(out2000);
             
         }
         
