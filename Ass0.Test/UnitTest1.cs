@@ -27,6 +27,5 @@ namespace Ass0.Test
             Assert.True(out2000);
             
         }
-        
     }
 }
