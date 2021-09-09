@@ -25,6 +25,8 @@ namespace Ass0.Test
             Assert.False(out1800);
             Assert.False(out1900);
             Assert.True(out2000);
+
+            Assert.Throws<ArgumentOutOfRangeException>(()=>LeapYear.IsLeapYear(1581));
             
         }
     }
